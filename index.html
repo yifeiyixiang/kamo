@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> 专升本最后倒计时 </title>
+<meta name="chenc" content="Runoob">
+<meta name="description" content="时钟 时间 & 钟表 日历">
+<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="static/css/style.css">
+<link rel="stylesheet" type="text/css" href="static/css/font_1191451_h720mljzrsc.css">
+<link rel="stylesheet" href="static/css/bootstrap.css">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<script src="static/js/jquery.min.js"></script>
+<script src="static/js/bootstrap.min.js"></script>
+<script src="static/js/jweixin-1.4.0.js"></script> 
+<script src="static/js/app.js"></script>
+
+</head>
+<body>
+    <div class="key">
+        <div class="iocnBox"><i class="iconfont icon-delete"></i></div>
+        <div class="empty">清空</div>
+        <textarea placeholder="在此述说放假感受..." rows="1" class="van-field__control"></textarea>
+        <div class="buts"><a href="#">发送</a></div>
+    </div>
+    <div class="today">
+        <div class="clock">
+            <div class="pos SS"></div>
+            <div class="pos MM"></div>
+            <div class="pos HH"></div>
+            <div class="spot"></div>
+        </div>
+        <!-- <p>北京时间</p> -->
+        <!-- <div class="day"></div>         -->
+        <div class="time"></div>
+        <div class="sydate"></div>
+    </div>
+    <div class="Barrage"></div>
+    <div class="message">发送弹幕</div>
+
+<div id="audioBox" class="music">
+		<script type="text/javascript"> 
+		window.onload = function(){ 
+		var arr = ["mp3/站在风口上.mp3","mp3/akon.mp3","mp3/篇章.mp3","mp3/黎明前的黑暗.mp3"];               //把需要播放的歌曲从后往前排，这里已添加两首音乐，可继续添加多个音乐 
+		var myAudio = new Audio(); 
+		myAudio.preload = true; 
+		myAudio.controls = true;  
+		myAudio.src = arr.pop();         //每次读数组最后一个元素 
+		myAudio.addEventListener('ended', playEndedHandler, false); 
+		myAudio.play(); 
+		document.getElementById("audioBox").appendChild(myAudio); 
+		myAudio.loop = false;//禁止循环，否则无法触发ended事件 
+		function playEndedHandler(){ 
+		myAudio.src = arr.pop(); 
+		myAudio.play(); 
+		console.log(arr.length); 
+		!arr.length && myAudio.removeEventListener('ended',playEndedHandler,false);//只有一个元素时解除绑定 
+		} 
+		} 
+		</script> 
+		</div>
+    <div class="music"> 
+       <!-- <audio class="play" id="indexVideo" controls autoplay>
+            <source src="mp3/akon.mp3" type="audio/mpeg">
+            您的浏览器不支持 audio 元素。
+        </audio> -->
+        <marquee direction="left"><script type="text/javascript" src="https://api.vvhan.com/api/ian?type=js"></script><script>vhan()</script></marquee>
+    </div> 
+	 
+</body>
+</html>	
+<div id="hans-bolang"></div><script src="https://api.vvhan.com/api/bolang"></script> //波浪特效
+	<script src="https://api.vvhan.com/api/yinghua"></script>
+	<script src='https://api.vvhan.com/api/snow'></script>
