@@ -1,9 +1,9 @@
  git init . 
  git remote add origin https://github.com/yifeiyixiang/kamo.git
  git add .
-git commit -m "first commit"
- git push -u origin main
+git commit -m "first commit" 
  git push -u origin master
+ git push -u origin main
 
 git config --golbal user.name "yifeiyixiang"
 git config --golbal user.email "2424379490@qq.com"
