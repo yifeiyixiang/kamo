@@ -9,6 +9,6 @@ https://mbd.pub/o/kamo/work
 （复制链接打开）
 
 第二步；在搜索框内搜索相关项目关键词
-![image](/kamo.png)
+![image](kamo.png)
 
 第三步:  拉到文章最下方，下载对应资源
